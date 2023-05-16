@@ -19,8 +19,8 @@ spec:
       - image: busybox
         name: busybox
         command:
-          - echo "hello world"
-          - "&& sleep"
-          - "3600"
+          - sh
+          - "-c"
+          - "echo 'hello world' && sleep 3600"
         resources: {}
 status: {}
