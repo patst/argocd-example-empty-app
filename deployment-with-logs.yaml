@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: example
-  name: example
+    app: example-with-logs
+  name: example-with-logs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example
+      app: example-with-logs
   strategy: {}
   template:
     metadata:
       labels:
-        app: example
+        app: example-with-logs
     spec:
       containers:
       - image: busybox
